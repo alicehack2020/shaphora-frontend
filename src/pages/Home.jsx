@@ -40,12 +40,12 @@ function Home() {
     },
   ]);
   function getData() {
-    fetch(`http://localhost:3000/makeup`)
+    fetch(`https://shaphorabackend.onrender.com/makeup`)
       .then((res) => res.json())
       .then((data) => {
         setFirst(data);
       });
-    fetch(`http://localhost:3000/hair`)
+    fetch(`https://shaphorabackend.onrender.com/hair`)
       .then((res) => res.json())
       .then((data) => {
         setSecond(data);

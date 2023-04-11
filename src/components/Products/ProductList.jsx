@@ -12,7 +12,7 @@ export const ProductList = ({ title }) => {
   const [data, setData] = React.useState([]);
 
   const getData = () => {
-    fetch(`http://localhost:3000/${title}`)
+    fetch(`https://shaphorabackend.onrender.com/${title}`)
       .then((res) => res.json())
       .then((res) => {
         setData(res);
